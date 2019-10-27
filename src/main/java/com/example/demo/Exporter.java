@@ -9,7 +9,7 @@ import org.springframework.remoting.support.RemoteExporter;
 public class Exporter {
     RemoteExporter RegisterRMIExporter(){
         RmiServiceExporter exporter = new RmiServiceExporter();
-        exporter.setServiceName("booking");
+        exporter.setServiceName("CabBookingService");
         exporter.setServiceInterface(CabBookingService.class);
         exporter.setService(new CabBookingServiceImpl());
         return exporter;
