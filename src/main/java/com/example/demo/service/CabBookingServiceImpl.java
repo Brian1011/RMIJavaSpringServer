@@ -6,6 +6,8 @@ public class CabBookingServiceImpl implements CabBookingService {
 
     @Override
     public String bookCab(String pickupLocation) {
-        return null;
+        System.out.println("############## RMI SERVER IS RUNNING #############");
+        System.out.println(" from client message is: "+pickupLocation);
+        return "Your have selected your pickup station as "+pickupLocation;
     }
 }
